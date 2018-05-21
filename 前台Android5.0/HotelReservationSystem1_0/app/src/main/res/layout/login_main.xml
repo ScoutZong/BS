@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_back"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/username_edit_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:hint="用户名：字母+数字/字母/下划线"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/password_edit_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:hint="密码：8-16位字母数字组合"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_blue"
+                android:text="登陆"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/register_btn_login"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_blue"
+                android:text="注册"
+                android:textColor="#fff" />
+            <Button
+                android:id="@+id/findpass_btn_login"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_blue"
+                android:text="找回密码"
+                android:textColor="#fff" />
+            <EditText
+                android:id="@+id/editText123312"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/skip_text_login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="跳过" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
